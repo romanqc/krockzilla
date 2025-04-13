@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background: #fdfdfd;
-    color: #333;
+    color: #000000;
   }
   
   header {
-    background: #111;
-    color: white;
+    background: #f6f6f6;
+    color: rgb(0, 0, 0);
     padding: 2rem;
     text-align: center;
   }
@@ -16,11 +16,11 @@ body {
   .tagline {
     font-style: italic;
     font-size: 1.2rem;
-    color: #bbb;
+    color: #1b1b1b;
   }
   
   nav {
-    background: #333;
+    background: #ffffff;
     text-align: center;
     padding: 0.5rem;
   }
@@ -35,13 +35,13 @@ body {
   }
   
   nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
   }
   
   nav a:hover {
-    color: #f39c12;
+    color: #1286f3;
   }
   
   section {
