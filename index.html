@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karen Karolina Avila - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Lightbox2 CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-
 
 </head>
 <body>
@@ -60,54 +58,37 @@
         </div>
       </div>
 
-      <h3 class="subheading">Vivid Edit Gallery</h3>
+      <h3 class="subheading">Edited Fujifilm</h3>
       <div class="vivid-gallery">
         <div class="image-box">
-          <a href="images/vivid edits/one.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 1">
-            <img src="images/vivid edits/one.jpeg" alt="Vivid Edit 1">
-          </a>
+          <img src="images/vivid edits/one.jpeg" alt="Vivid Edit 1" class="lightbox-thumb" data-full="images/vivid edits/one.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/two.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 2">
-            <img src="images/vivid edits/two.jpeg" alt="Vivid Edit 2">
-          </a>
+          <img src="images/vivid edits/two.jpeg" alt="Vivid Edit 2" class="lightbox-thumb" data-full="images/vivid edits/two.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/three.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 3">
-            <img src="images/vivid edits/three.jpeg" alt="Vivid Edit 3">
-          </a>
+          <img src="images/vivid edits/three.jpeg" alt="Vivid Edit 3" class="lightbox-thumb" data-full="images/vivid edits/three.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/four.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 4">
-            <img src="images/vivid edits/four.jpeg" alt="Vivid Edit 4">
-          </a>
+          <img src="images/vivid edits/four.jpeg" alt="Vivid Edit 4" class="lightbox-thumb" data-full="images/vivid edits/four.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/six.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 6">
-            <img src="images/vivid edits/six.jpeg" alt="Vivid Edit 6">
-          </a>
+          <img src="images/vivid edits/six.jpeg" alt="Vivid Edit 6" class="lightbox-thumb" data-full="images/vivid edits/six.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/seven.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 7">
-            <img src="images/vivid edits/seven.jpeg" alt="Vivid Edit 7">
-          </a>
+          <img src="images/vivid edits/seven.jpeg" alt="Vivid Edit 7" class="lightbox-thumb" data-full="images/vivid edits/seven.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/eight.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 8">
-            <img src="images/vivid edits/eight.jpeg" alt="Vivid Edit 8">
-          </a>
+          <img src="images/vivid edits/eight.jpeg" alt="Vivid Edit 8" class="lightbox-thumb" data-full="images/vivid edits/eight.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/nine.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 9">
-            <img src="images/vivid edits/nine.jpeg" alt="Vivid Edit 9">
-          </a>
+          <img src="images/vivid edits/nine.jpeg" alt="Vivid Edit 9" class="lightbox-thumb" data-full="images/vivid edits/nine.jpeg">
         </div>
         <div class="image-box">
-          <a href="images/vivid edits/ten.jpeg" data-lightbox="vivid-gallery" data-title="Vivid Edit 10">
-            <img src="images/vivid edits/ten.jpeg" alt="Vivid Edit 10">
-          </a>
+          <img src="images/vivid edits/ten.jpeg" alt="Vivid Edit 10" class="lightbox-thumb" data-full="images/vivid edits/ten.jpeg">
         </div>
-      </div>      
+      </div>
+       
     
       <!-- Add more .work-entry blocks below as needed -->
     
@@ -125,9 +106,12 @@
   </footer>
 
   <script src="script.js"></script>
-  <script type="module" src="lightbox/main.js">
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
+  <div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Expanded image" />
+    </div>
+  </div>
+  
 </body>
 </html>
