@@ -44,18 +44,62 @@ body {
     color: #1286f3;
   }
   
+  /* Common Section Styling */
   section {
     padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* About Section */
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 250px;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Portfolio Section */
+  #portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
   
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-content: center;
   }
   
+  /* Gallery Items */
   .item {
     background: #eee;
     padding: 1rem;
@@ -69,6 +113,21 @@ body {
     border-radius: 5px;
   }
   
+  /* Contact Section */
+  #contact {
+    margin-top: 4rem;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact p {
+    font-size: 1.1rem;
+  }
+  
+  /* Footer */
   footer {
     background: #111;
     color: white;
