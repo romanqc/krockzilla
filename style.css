@@ -101,18 +101,172 @@ body {
   
   /* Gallery Items */
   .item {
-    background: #eee;
+    background: #ffffff;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 1px;
     text-align: center;
   }
   
   .item img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 1px;
+  }
+
+  .portfolio-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
   }
   
+  .portfolio-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .work-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  
+  .work-description {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .work-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .work-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .work-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .work-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .work-image img:hover {
+    transform: scale(1.02);
+  }
+
+  .subheading {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #111;
+  }
+  
+  .vivid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .image-box {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* or use 1 / 1 for square, or any ratio you prefer */
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-box img:hover {
+    transform: scale(1.03);
+  }
+
+  /* LIGHT BOX FORMATING */
+  
+/* Lightbox Close Button */
+.lb-close {
+  display: block !important;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Lightbox Navigation Arrows */
+.lb-prev, .lb-next {
+  display: block !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.lb-prev {
+  left: 20px;
+}
+
+.lb-next {
+  right: 20px;
+}
+
+/* Background Overlay */
+.lb-overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999 !important;
+}
+
+/* Modal Image */
+.lb-image {
+  z-index: 500;
+}
+
+/* Make sure lightbox modal is centered */
+.lb-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000 !important;
+}
+
+
   /* Contact Section */
   #contact {
     margin-top: 4rem;
@@ -129,8 +283,8 @@ body {
   
   /* Footer */
   footer {
-    background: #111;
-    color: white;
+    background: #f0f0f0;
+    color: rgb(22, 22, 22);
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;
