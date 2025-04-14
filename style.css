@@ -312,6 +312,22 @@ body {
   #contact p {
     font-size: 1.1rem;
   }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #000; /* Change color if needed */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #ff4500; /* Optional hover color */
+  }
   
   /* Footer */
   footer {
