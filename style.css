@@ -12,6 +12,30 @@ body {
     padding: 2rem;
     text-align: center;
   }
+
+  header.banner {
+    background: url('images/website_banner_ver2.png') center/cover no-repeat;
+    height: 90px; /* or however tall you want it */
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* makes text readable */
+    z-index: 0;
+  }
+  
+  .banner-content {
+    z-index: 1;
+    position: relative;
+  }
   
   .tagline {
     font-style: italic;
@@ -23,6 +47,7 @@ body {
     background: #ffffff;
     text-align: center;
     padding: 0.5rem;
+    margin-top:10px;
   }
   
   nav ul {
