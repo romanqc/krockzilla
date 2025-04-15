@@ -35,7 +35,7 @@ body {
   /* Laptop screens */
   @media screen and (min-width: 1024px) and (max-width: 1799px) {
     header.banner {
-      height: clamp(60px, 8vw, 120px); /* good for laptops */
+      height: clamp(60px, 8vw, 1200px); /* good for laptops */
     }
   }
   
@@ -113,14 +113,17 @@ body {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    max-width: 1000px; /* Keeps layout from stretching too wide */
+    margin: auto;
+    padding: 2rem;
   }
   
   .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 250px;       /* Increased from 200px */
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .about-text {
@@ -131,13 +134,24 @@ body {
   }
   
   .about-text h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;  /* Increased from 2rem */
     margin-bottom: 1rem;
   }
   
   .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.25rem; /* Increased from 1.1rem */
+    line-height: 1.8;
+  }
+
+  @media (max-width: 600px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-text {
+      text-align: center;
+    }
   }
   
   /* Portfolio Section */
@@ -200,7 +214,7 @@ body {
   }
   
   .work-description p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
   
