@@ -33,3 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+console.log("To: Karen K. Avila");
+console.log("From: Roman Q. Chavez");
+console.log("I love you so much Karen c:\nI hope you enjoy this website. I had so much making it for you!");
