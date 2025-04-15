@@ -42,6 +42,20 @@ body {
     font-size: 1.2rem;
     color: #1b1b1b;
   }
+
+ /* 🔽 SMALL SCREENS (mobile) */
+@media screen and (max-width: 600px) {
+  header.banner {
+    height: 6px;
+  }
+}
+
+/* 🔼 LARGE SCREENS (desktop and up) */
+@media screen and (min-width: 1200px) {
+  header.banner {
+    height: 400px;
+  }
+}
   
   nav {
     background: #ffffff;
