@@ -15,13 +15,35 @@ body {
 
   header.banner {
     background: url('images/website_banner_ver2.png') center/cover no-repeat;
-    height: 90px; /* or however tall you want it */
+    /* Start with a base height using vw */
+    height: clamp(60px, calc(3vw + 2rem), 160px); /* Smooth transition */
     position: relative;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  
+  /* Ultra-wide screens */
+  @media screen and (min-width: 1800px) {
+    header.banner {
+      height: clamp(60px, 12vw, 160px); /* bigger for wide screens */
+    }
+  }
+  
+  /* Laptop screens */
+  @media screen and (min-width: 1024px) and (max-width: 1799px) {
+    header.banner {
+      height: clamp(60px, 8vw, 120px); /* good for laptops */
+    }
+  }
+  
+  /* Small screens (mobile) */
+  @media screen and (max-width: 600px) {
+    header.banner {
+      height: clamp(30px, 4vw, 70px); /* responsive for mobile */
+    }
   }
   
   .banner::after {
@@ -42,20 +64,6 @@ body {
     font-size: 1.2rem;
     color: #1b1b1b;
   }
-
- /* 🔽 SMALL SCREENS (mobile) */
-@media screen and (max-width: 600px) {
-  header.banner {
-    height: 6px;
-  }
-}
-
-/* 🔼 LARGE SCREENS (desktop and up) */
-@media screen and (min-width: 1200px) {
-  header.banner {
-    height: 400px;
-  }
-}
   
   nav {
     background: #ffffff;
