@@ -100,7 +100,7 @@ body {
   
   /* Common Section Styling */
   section {
-    padding: 2rem;
+    padding-top: 2rem;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
@@ -116,8 +116,8 @@ body {
   }
   
   .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
