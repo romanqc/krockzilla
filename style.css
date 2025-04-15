@@ -16,7 +16,7 @@ body {
   header.banner {
     background: url('images/website_banner_ver2.png') center/cover no-repeat;
     /* Start with a base height using vw */
-    height: clamp(60px, calc(3vw + 2rem), 160px); /* Smooth transition */
+    height: clamp(40px, calc(3vw + 2rem), 160px); /* Adjust base height */
     position: relative;
     color: white;
     display: flex;
@@ -42,9 +42,16 @@ body {
   /* Small screens (mobile) */
   @media screen and (max-width: 600px) {
     header.banner {
-      height: clamp(5px, 3vw, 40px); /* responsive for mobile */
+      height: clamp(20px, 3vw, 40px); /* smaller height for mobile */
     }
   }
+  
+  /* Additional tweak for ultra-small screens (300px or lower) */
+  @media screen and (max-width: 395px) {
+    header.banner {
+      height: 10px; /* Reduce to 20px for very small screens */
+    }
+  }  
   
   .banner::after {
     content: '';
