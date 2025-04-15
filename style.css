@@ -28,7 +28,7 @@ body {
   /* Ultra-wide screens */
   @media screen and (min-width: 1800px) {
     header.banner {
-      height: clamp(60px, 12vw, 160px); /* bigger for wide screens */
+      height: clamp(60px, 12vw, 1600px); /* bigger for wide screens */
     }
   }
   
@@ -42,7 +42,7 @@ body {
   /* Small screens (mobile) */
   @media screen and (max-width: 600px) {
     header.banner {
-      height: clamp(30px, 4vw, 70px); /* responsive for mobile */
+      height: clamp(30px, 4vw, 40px); /* responsive for mobile */
     }
   }
   
