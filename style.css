@@ -115,7 +115,7 @@ body {
     flex-wrap: wrap;
     max-width: 1000px; /* Keeps layout from stretching too wide */
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
   }
   
   .profile-pic {
