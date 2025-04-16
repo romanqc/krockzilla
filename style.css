@@ -388,13 +388,17 @@ body {
   .social-icons a {
     margin-right: 15px;
     font-size: 24px;
-    color: #000; /* Change color if needed */
+    color: #000;
     text-decoration: none;
     transition: color 0.3s;
   }
-
-  .social-icons a:hover {
-    color: #ff4500; /* Optional hover color */
+  
+  .social-icons a[href*="linkedin.com"]:hover {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
+  .social-icons a:hover:not([href*="linkedin.com"]) {
+    color: #ff4500; /* Keep orange for others */
   }
   
   /* Footer */
