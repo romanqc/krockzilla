@@ -17,3 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
       lightboxImg.src = '';
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a[href*="youtube"], a[href*="vimeo"]').forEach(link => {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    });
+  });
