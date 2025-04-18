@@ -144,6 +144,17 @@ section {
   line-height: 1.8;
 }
 
+@media (max-width: 708px) {
+  .about-container {
+    gap: 2rem; /* Reduce spacing for mobile */
+    padding-top: 1rem;
+  }
+
+  .about-text {
+    text-align: left; /* Optional: better visual alignment on mobile */
+  }
+}
+
 @media (max-width: 300px) {
   .work-entry {
     flex-direction: column;
