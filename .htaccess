@@ -1,4 +1,4 @@
-# mod_rewrite starts here
+<!-- # mod_rewrite starts here
 
 RewriteEngine on
 
@@ -14,7 +14,25 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 # Creating a Rule now
 # Here we actually show the page that has the .html extension
 
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^(.*)$ $1.html [NC,L] -->
+
+# Turn on URL rewriting
+RewriteEngine on
+
+# Skip if actual directory
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+
+# Skip if actual file (like about.html, style.css, etc.)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Route /about (or /about/) to index.html
+RewriteRule ^about/?$ index.html [L]
+
+# Optional: Route any clean URL (like /contact) to .html files if they exist
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
 
 
 
