@@ -115,7 +115,8 @@ section {
   flex-wrap: wrap;
   max-width: 1000px; /* Keeps layout from stretching too wide */
   margin: auto;
-  padding: 1rem;
+  padding-bottom: 0.5rem; /* Reduced from 1rem */
+  margin-bottom: -5rem;    /* Add this or tweak it */
 }
 
 .profile-pic {
@@ -143,18 +144,20 @@ section {
   line-height: 1.8;
 }
 
-@media (max-width: 600px) {
-  .about-container {
+@media (max-width: 300px) {
+  .work-entry {
     flex-direction: column;
-    align-items: flex-start; /* This fixes it! */
-  }
-
-  .profile-pic {
-    align-items: center;
+    align-items: center; /* this will center child elements horizontally */
+    text-align: center;
   }
 
   .about-text {
-    text-align: left;
+    text-align: center;
+  }
+
+  .about-pic {
+    margin: 0 auto; /* ensures the image centers */
+    display: block;
   }
 }
 
