@@ -95,7 +95,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #1286f3;
+  color: #66b3ff;
 }
 
 /* Common Section Styling */
@@ -218,6 +218,7 @@ section {
 .work-description h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .work-description p {
@@ -482,4 +483,15 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
+}
+
+a {
+  color: #66b3ff; /* lighter blue - you can adjust this */
+  text-decoration: none;
+}
+
+/* Optional: Add a hover style */
+a:hover {
+  color: #3399ff;  /* slightly darker blue on hover */
+  text-decoration: none; /* or keep it none if you prefer */
 }
