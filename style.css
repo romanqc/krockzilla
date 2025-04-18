@@ -373,6 +373,7 @@ section {
         }
     
         .director, .festival {
+          padding-top: 0.75rem;
           font-size: 0.85rem;
           color: #555;
         }
