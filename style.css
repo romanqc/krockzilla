@@ -320,7 +320,74 @@ section {
   }
 }
 
-/* ----------------------- END OF ORDERINGS ---------------------- */
+/* ----------------------- Film Page ---------------------- */
+        .year-heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          margin-bottom: 1rem;
+          padding: 0 1rem; /* keeps it in line with project cards if they have padding */
+        }
+
+        .year-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin: 0;
+        }
+        
+        .note-inline {
+          font-size: 0.7rem;
+          color: #666;
+          font-style: italic;
+        }
+
+        /* Optionally, you can add horizontal padding to .year-section to match .project-card padding: */
+        .year-section {
+          margin-bottom: 4rem;
+          padding: 0 1rem;
+        }
+    
+        .projects {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 2rem;
+        }
+    
+        .project-card {
+          background: #fff;
+          padding: 1rem;
+          border-radius: 1px;
+          text-align: left;
+        }
+    
+        .project-title {
+          font-size: 1.1rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+    
+        .roles {
+          font-size: 0.95rem;
+          margin-bottom: 0.4rem;
+        }
+    
+        .director, .festival {
+          font-size: 0.85rem;
+          color: #555;
+        }
+    
+        .unreleased {
+          font-style: italic;
+        }
+
+        .project-card img {
+          width: 100%;
+          height: 200px; /* adjust this as needed */
+          object-fit: cover;
+          border-radius: 4px;
+          margin-bottom: 0.75rem;
+        }
+
 
 /* LIGHT BOX FORMATING */
 
