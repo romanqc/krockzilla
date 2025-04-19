@@ -505,7 +505,7 @@ transform-origin: top center;
 
 /* Contact Section */
 #contact {
-  margin-top: 4rem;
+  margin-top: -4rem;
 }
 
 #contact h2 {
