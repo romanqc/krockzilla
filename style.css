@@ -221,6 +221,10 @@ section {
   text-align: left;
 }
 
+.work-entry.reverse {
+  flex-direction: row-reverse;
+}
+
 .work-description {
   flex: 1;
   min-width: 280px;
@@ -261,6 +265,23 @@ section {
   margin-bottom: 1.5rem;
   text-align: center;
   color: #111;
+}
+
+@media (max-width: 768px) {
+  .work-entry,
+  .work-entry.reverse {
+    flex-direction: column !important;
+  }
+
+  .work-image,
+  .work-description {
+    text-align: center;
+  }
+
+  .work-description h3,
+  .work-description p {
+    text-align: left;
+  }
 }
 
 /* .vivid-gallery {
